@@ -1,6 +1,9 @@
 
 import './App.css'
 import { Button, ButtonGroup } from '@chakra-ui/react'
+import { Route, Routes } from 'react-router-dom'
+import Homepage from './components/Homepage'
+import ChatPage from './components/ChatPage'
 
 
 function App() {
@@ -8,10 +11,14 @@ function App() {
 
   return (
     <>
-      <div>
-        <Button>LINK</Button>
-      </div>
- 
+     
+        <Routes>
+          <Route path='/' element={<Homepage/>} />
+          <Route path='/chat' element={<ChatPage/>} />
+        </Routes>
+
+      
+
     </>
   )
 }
