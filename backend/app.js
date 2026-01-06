@@ -19,7 +19,10 @@ app.get('/getdata', (req, res) => {
     res.send(chats)
 })
 
-
+app.get('/getdata/:id', (req, res) => {
+    const chat = chats.find((chat) => chat._id === req.params.id);
+    res.send(chat)
+})
 
 const connectDB = async () => {
     try {
