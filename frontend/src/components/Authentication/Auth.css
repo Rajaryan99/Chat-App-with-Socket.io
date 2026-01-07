@@ -1,0 +1,64 @@
+.singupInput{
+    width: 400px;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+label{
+    font-weight: 600;
+
+}
+
+#signup {
+    display: flex;
+    flex-direction: column;
+   
+
+}
+
+#signupDiv {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#signbtn{
+    border:none;
+    background-color: rgba(29, 29, 29, 0.889);
+    padding: 10px;
+    width: 100%;
+    font-weight: 600;
+    color: #ffff;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease-out;
+    
+}
+
+#guest{
+    border: none;
+        background-color: rgba(243, 87, 87, 0.889);
+        padding: 10px;
+        width: 100%;
+        font-weight: 600;
+        color: #ffff;
+        border-radius: 20px;
+        cursor: pointer;
+        margin-bottom: 10px;
+        transition: background-color 0.3s ease-out;
+}
+
+#guest:hover {
+    background-color: rgba(239, 30, 30, 0.901);
+    font-size: large;
+    box-shadow: rgba(red, green, blue, 0.4);
+}
+
+#signbtn:hover{
+    background-color: black;
+    font-size: large;
+    box-shadow: rgba(red, green, blue, 0.4);
+}
+
