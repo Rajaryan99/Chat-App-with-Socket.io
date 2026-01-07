@@ -11,13 +11,13 @@ function App() {
 
   return (
     <>
-     
+     <div className="app">
         <Routes>
           <Route path='/' element={<Homepage/>} />
           <Route path='/chats' element={<ChatPage/>} />
         </Routes>
 
-      
+      </div>
 
     </>
   )
