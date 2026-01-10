@@ -29,6 +29,9 @@ app.get('/getdata/:id', (req, res) => {
 
 app.use('/user', userRoutes)
 
+app.use(notFound)
+app.use(errorHandler)
+
 const connectDB = async () => {
     try {
 
