@@ -4,6 +4,7 @@ import 'dotenv/config'
 import mongoose from 'mongoose';
 import { chats } from './data/data.js'
 import userRoutes from './routes/userRoutes.js'
+import { notFound, errorHandler } from './middlewares/errorHandlers.js';
 
 
 const app = express();
